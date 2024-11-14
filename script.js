@@ -185,7 +185,6 @@ document.getElementById('search').addEventListener('input', function() {
     const filteredSuspects = suspects.filter(suspect =>
         suspect.name.toLowerCase().includes(query) ||
         suspect.civId.toLowerCase().includes(query)
-        suspect.tags.toLowerCase().includes(query)
                                              
     );
     
