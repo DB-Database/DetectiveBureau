@@ -1,11 +1,13 @@
 // List of valid accounts with usernames and passwords
 const validAccounts = [
     { username: 'Dmitry', password: 'toxic135', role: 'admin' },
-    { username: 'thorne', password: 'secure456', role: 'officer' },
+    { username: 'thorne', password: 'secure456', role: 'admin' },
+    { username: 'Adam', password: 'secure456', role: 'admin' },
     { username: 'Ezekiel Robert', password: 'Ezekiel67990832123', role: 'admin' },
     { username: 'Vincent OConner', password: 'Vincent67990832123', role: 'detective' },
-    { username: 'officer1', password: 'secure456', role: 'officer' },
-    //{ username: 'detective2', password: 'investigate789', role: 'detective' }
+    { username: 'Arthur', password: 'secure456', role: 'detective' },
+    { username: 'Charles', password: 'secure456', role: 'detective' }
+    // { username: 'Adam', password: 'investigate789', role: 'admin' }
 ];
 
 
@@ -183,6 +185,8 @@ document.getElementById('search').addEventListener('input', function() {
     const filteredSuspects = suspects.filter(suspect =>
         suspect.name.toLowerCase().includes(query) ||
         suspect.civId.toLowerCase().includes(query)
+        suspect.tags.toLowerCase().includes(query)
+                                             
     );
     
     displaySuspects(filteredSuspects);
