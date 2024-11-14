@@ -1,6 +1,6 @@
 // List of valid accounts with usernames and passwords
 const validAccounts = [
-    { username: 'Dmitry', password: 'toxic135', role: 'admin' },
+    { username: 'Dmitry Fladiro', password: 'toxic135', role: 'admin' },
     { username: 'thorne', password: 'secure456', role: 'admin' },
     { username: 'Adam', password: 'secure456', role: 'admin' },
     { username: 'Ezekiel Robert', password: 'Ezekiel67990832123', role: 'admin' },
