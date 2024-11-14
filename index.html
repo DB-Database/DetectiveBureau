@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Database</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="1.png" type="image/png">
+</head>
+<body>
+
+    <!-- Login Page -->
+    <div id="login-page">
+        <h1>Database Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <p id="login-error" style="color: red; display: none;">Incorrect username or password.</p>
+    </div>
+
+    <!-- Database Page -->
+    <div id="database-page" style="display: none;">
+        <header>
+            <img src="1.png" alt="Police Logo" class="logo">
+            <h1>Detective Bureau Database</h1>
+            <input type="text" id="search" placeholder="Search by name or CIV ID">
+            <button id="logout-btn">Logout</button>
+        </header>
+        
+        <main id="suspect-results">
+            <!-- Suspect cards will appear here -->
+        </main>
+
+        <button id="add-suspect-btn">+ Add Suspect</button>
+        <button id="clear-suspect-btn">Clear All Suspects</button>
+
+        <!-- Add Suspect Modal -->
+        <div id="add-suspect-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Suspect</h2>
+                <form id="suspect-form">
+                    <label for="name">Suspect Name:</label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="photo">Suspect Photo (URL):</label>
+                    <input type="url" id="photo" placeholder="https://example.com/photo.jpg">
+                    
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" required>
+                    
+                    <label for="civ-id">CIV ID:</label>
+                    <input type="text" id="civ-id" required>
+                    
+                    <label for="convictions">Known Convictions:</label>
+                    <textarea id="convictions" rows="2"></textarea>
+                    
+                    <label for="tags">Tags:</label>
+                    <select id="tags" multiple required>
+                        <option value="Wanted">Wanted</option>
+                        <option value="Dangerous">Dangerous</option>
+                        <option value="Armed">Armed</option>
+                        <option value="Repeat Offender">Repeat Offender</option>
+                        <option value="Fugitive">Fugitive</option>
+                    </select>
+                    
+                    <label for="summary">Summary:</label>
+                    <textarea id="summary" rows="3" required></textarea>
+                    
+                    <button type="submit">Add Suspect</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
