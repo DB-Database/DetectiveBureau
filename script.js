@@ -2,8 +2,8 @@
 const validAccounts = [
     { username: 'Dmitry', password: 'toxic135', role: 'admin' },
     { username: 'thorne', password: 'secure456', role: 'officer' },
-    { username: 'detective2', password: 'investigate789', role: 'detective' }
-    //{ username: 'admin', password: 'police123', role: 'admin' },
+    { username: 'Ezekiel Robert', password: 'Ezekiel67990832123', role: 'admin' },
+    { username: 'Vincent OConner', password: 'Vincent67990832123', role: 'detective' },
     //{ username: 'officer1', password: 'secure456', role: 'officer' },
     //{ username: 'detective2', password: 'investigate789', role: 'detective' }
 ];
