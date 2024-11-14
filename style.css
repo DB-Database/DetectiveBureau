@@ -54,18 +54,23 @@ header .logo {
 /* Login Page */
 #login-page {
     display: flex;
-    justify-content: center;
     align-items: center;
+    color: #ffffff;
+    justify-content: center;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #12141a;
     flex-direction: column;
+}
+
+#login-page .login-logo {
+    width: 1.5px;  /* Adjust the size of the logo as needed */
+    margin-right: 5px;  /* Add some space between the logo and the text */
 }
 
 #login-page h1 {
     font-size: 2.5em;
-    color: #343a40;
+    color: #ffffff;
 }
-
 #login-form {
     display: flex;
     flex-direction: column;
